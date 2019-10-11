@@ -105,7 +105,10 @@ void mouseReleased()
 {
   shoot = false; //player cant shoot bullet when mouse is not clicked. 
 }
-
+void Score(int i)
+{
+  myplayer.score += i; //update score
+}
 void ScoreText()  // dislay score as text at this position
 {
    textAlign(CENTER);
@@ -113,10 +116,7 @@ void ScoreText()  // dislay score as text at this position
    fill(255);
    text(myplayer.score, width/2, height/2); //call score from which is initialized in Player class
 } 
-void Score(int i)
-{
-  myplayer.score += i; //update score
-}
+
 
 void GameOverPanel()  //display the ending text when game is over
 {
