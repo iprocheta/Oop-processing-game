@@ -25,7 +25,7 @@ class Bullet extends GameObject // this subclass inherit x,y,w,h,tag attributes 
   void Move() 
   {
     yPos-=20; // define the bullet position towards upwards
-    x = xPos;
+    x = xPos; //assign the location to x,y variable for later use 
     y = yPos;
   }
   
